@@ -1,0 +1,14 @@
+:root {
+  --background-color: #c8d1cc;
+  --second-color: #545353;
+  --third-color: #354f52;
+  --fourth-color: #345a78;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
