@@ -15,10 +15,26 @@ body {
   font-style: normal;
 }
 
-ul {
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
   list-style: none;
-  padding: 0;
-  margin: 0;
+}
+
+a,
+button {
+  cursor: pointer;
 }
 
 a {
@@ -26,7 +42,134 @@ a {
   color: var(--text-color);
 }
 
-.section {
+a:visited {
+  color: var(--text-color);
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+  color: var(--text-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.section {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
 .container {
+  max-width: 428px;
+
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* header */
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+}
+
+/* hero */
+.hero-section {
+  background-image: url("../images/hero/hero7.jpg");
+  background-color: var(--bg-color);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  max-width: 428px;
+  height: 432px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-title {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+}
+
+.button {
+  background-color: #e0e0e0;
+  border-radius: 50px;
+  box-shadow:
+    inset 4px 4px 10px #bcbcbc,
+    inset -4px -4px 10px #ffffff;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 18px;
+  padding: 15px 40px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid rgb(206, 206, 206);
+  font-family: inherit;
+
+  margin-top: 24px;
+}
+
+button:hover {
+  box-shadow:
+    inset 2px 2px 5px #bcbcbc,
+    inset -2px -2px 5px #ffffff,
+    2px 2px 5px #bcbcbc,
+    -2px -2px 5px #ffffff;
+}
+
+button:focus {
+  outline: none;
+  box-shadow:
+    inset 2px 2px 5px #bcbcbc,
+    inset -2px -2px 5px #ffffff,
+    2px 2px 5px #bcbcbc,
+    -2px -2px 5px #ffffff;
 }
