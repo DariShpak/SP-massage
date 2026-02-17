@@ -8,11 +8,11 @@
 
 body {
   background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: "LINE Seed JP", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
+  color: var(--second-color);
+  font-family: "Geist", sans-serif;
+  font-weight: 200;
   font-style: normal;
+  font-size: 18px;
 }
 
 h1,
@@ -39,11 +39,11 @@ button {
 
 a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--second-color);
 }
 
 a:visited {
-  color: var(--text-color);
+  color: var(--second-color);
 }
 
 img {
@@ -54,7 +54,7 @@ img {
 
 address {
   font-style: normal;
-  color: var(--text-color);
+  color: var(--second-color);
 }
 
 .visually-hidden {
@@ -124,7 +124,7 @@ address {
 
 /* hero */
 .hero-section {
-  background-image: url("../images/hero/hero11.jpeg");
+  background-image: url("../images/hero/hero108.jpg");
   background-color: var(--bg-color);
   background-size: cover;
   background-position: center;
@@ -134,7 +134,17 @@ address {
   margin-left: auto;
   margin-right: auto;
   color: var(--bg-color);
+  text-shadow: #545353 1px 1px 2px, #545353 0 0 1em, #545353 0 0 0.2em;
+
+  display: flex;
+  align-items:center;
+  /* text-align: center; */
 }
+
+.hero-container{
+width: 100%;
+}
+
 .hero-title {
   font-size: 58px;
   margin-bottom: 48px;
